@@ -26,7 +26,7 @@ while True:
 
     print(f"Sorteio nº: {contador}: {[x for x in sorteio]}")
     # Verifica se os números escolhidos são os sorteados.
-    if sorted([n1, n2, n3, n4, n5, n6]) == sorted(sorteio):
+    if set([n1, n2, n3, n4, n5, n6]) == set(sorteio):
         break
 
 print(f"Os números ganhadores foram {sorteio[0]}, {sorteio[1]}, {sorteio[2]}, {sorteio[3]}, {sorteio[4]}, {sorteio[5]}, que saíram no sorteio nº {contador}.")
