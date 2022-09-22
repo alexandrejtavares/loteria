@@ -7,6 +7,8 @@ n4 = int(input('Digite a quarta dezena: '))
 n5 = int(input('Digite a quinta dezena: '))
 n6 = int(input('Digite a sexta dezena: '))
 
+dezenas = set([n1, n2, n3, n4, n5, n6])
+
 contador = 0
 
 while True:
@@ -26,7 +28,7 @@ while True:
 
     print(f"Sorteio nº: {contador}: {[x for x in sorteio]}")
     # Verifica se os números escolhidos são os sorteados.
-    if set([n1, n2, n3, n4, n5, n6]) == set(sorteio):
+    if dezenas == set(sorteio):
         break
 
 print(f"Os números ganhadores foram {sorteio[0]}, {sorteio[1]}, {sorteio[2]}, {sorteio[3]}, {sorteio[4]}, {sorteio[5]}, que saíram no sorteio nº {contador}.")
